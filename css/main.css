@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+body {
+  background-color: var(--preto);
+  font-family: Arial, Helvetica, sans-serif;
+
+  color: white;
+}
+header {
+  margin: 10px 0 0 5px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .esquerda {
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  max-width: 10rem;
+  margin-right: 15px;
+}
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 1.6rem;
+  margin-left: 5px;
+}
+header nav a:hover {
+  color: #fff;
+}
+header .direita {
+  color: white;
+  margin-right: 3rem;
+  margin-left: 15rem;
+}
+header .img {
+  max-width: 2.5rem;
+  margin-right: 20px;
+}
+header .conta {
+  width: 3rem;
+  height: 3.5rem;
+  background-color: chocolate;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* Filme em cartaz */
+
+main .filmePrincipal {
+  font-size: 4rem;
+  background: url('/img/imagem-fundo.jpg');
+
+  height: 50rem;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  position: relative;
+}
+.container {
+  margin-left: 4rem;
+}
+#container {
+  width: 70%;
+}
+.titulo {
+  font-size: 6rem;
+}
+.botoes {
+  margin-top: 20px;
+}
+.botao {
+  width: 14rem;
+  height: 3rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.botao:hover {
+  background-color: rgb(189, 184, 184);
+}
+.botao2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%);
+  color: white;
+}
+.botao i {
+  margin-right: 5px;
+}
+.carrosel {
+  margin-top: 20px;
+}
+.lista {
+  font-size: 1.6rem;
+  padding: 2px;
+  margin: 0 5px 5px 0;
+}
+
+.box-filmes {
+  width: 2rem;
+  height: 12rem;
+  display: block;
+  background-size: cover;
+}
+.caixa1 {
+  width: 80vw;
+  height: 50vw;
+  margin-left: 4rem;
+  background: url('/img/detalhes.jpg'),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%);
+  background-size: cover;
+  position: absolute;
+  top: 1%;
+  z-index: 2;
+}
+.caixa2 {
+  width: 70vw;
+  height: 50vw;
+  background-color: black;
+  position: absolute;
+  align-items: center;
+  left: 16%;
+  top: 1%;
+  z-index: 2;
+}
+.caixa3 {
+  margin-top: 15px;
+  width: 100%;
+  height: 95%;
+  position: absolute;
+}
+.texto1 {
+  color: lightgrey;
+  text-shadow: 2px 2px 2px black;
+  margin: 2% 60px 0 20px;
+  font-size: 2.6rem;
+  position: absolute;
+  z-index: 2;
+}
+.texto2 {
+  text-shadow: 2px 2px 2px black;
+  margin: 50% 60px 0 20px;
+  font-size: 2.6rem;
+}
+.title {
+  text-shadow: 2px 2px 2px black;
+  margin: 10px 60px 0 20px;
+  font-size: 4rem;
+  z-index: 2;
+}
+.sair {
+  background: linear-gradient(
+    rgba(69, 133, 150, 0.63),
+    rgba(42, 50, 121, 0.5) 100%
+  );
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  margin: 4px 4px 0 0;
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.video {
+  display: none;
+}
+.vedeo1 {
+  position: absolute;
+}
+.exit {
+  display: none;
+}
+.spans {
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  border-radius: 3px;
+  text-align: center;
+  right: 8rem;
+}
+.notificacao {
+  width: 10rem;
+  height: 6rem;
+  font-size: 1.6rem;
+}
+.sobre-conta {
+  width: 10rem;
+  height: 10rem;
+  font-size: 1.4rem;
+}
+footer {
+  height: 10rem;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.6rem;
+}
