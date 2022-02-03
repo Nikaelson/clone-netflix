@@ -43,7 +43,6 @@ detalhes.addEventListener('click', () => {
 var span2 = document.querySelector('.caixa2')
 assistir.addEventListener('click', () => {
   var video = document.querySelector('.video')
-  alert()
   adiciona(span2, 'caixa2')
   adiciona(video, 'video1')
   remove(video, 'video')
