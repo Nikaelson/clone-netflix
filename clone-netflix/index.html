@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetFlix</title>
+    <link rel="shortcut icon" href="img/netflix_logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="esquerda">
+          <img src="img/netflix.svg" class="logo" alt="logo netflix" />
+          <nav>
+            <a href="#">Início</a>
+            <a href="#">Séries</a>
+            <a href="#">Filmes</a>
+            <a href="#">Documentários</a>
+          </nav>
+        </div>
+        <div class="direita">
+          <img src="img/loupe.png" alt="lupa de pesquisa" class="img" />
+          <img
+            src="img/notificacao.png"
+            alt="notificação"
+            class="img"
+            onmouseover="aparecerTexto1();"
+            onmouseout="reset1();"
+          />
+
+          <button
+            class="conta"
+            onmouseover="aparecerTexto();"
+            onmouseout="reset();"
+          ></button>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#">Início</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Documentários</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="filmePrincipal">
+        <span class="spans notificacao exit">Novidades em breve!</span>
+        <span class="spans sobre-conta exit"
+          >Aprovete sua conta! Assista as melhores produçôes do cinema
+          mundial</span
+        >
+        <section class="caixa1 exit">
+          <button class="sair exit">X</button>
+          <p class="title"></p>
+          <p class="texto1"></p>
+          <p class="texto2"></p>
+        </section>
+        <section class="caixa2 exit">
+          <button class="sair2 exit sair">X</button>
+          <p class="title">Trailler</p>
+          <div class="caixa3">
+            <iframe
+              class="video"
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/AFiXqNAUW1I"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+        <div class="container" id="container">
+          <h3 class="titulo">O jogo da imitação</h3>
+          <p>O verdadeiro enigma estava no homem que desvendou o código.</p>
+          <div class="botoes">
+            <button role="button" class="botao botao1">
+              <i class="fas fa-play fa-lg"></i>ASSISTIR AGORA
+            </button>
+            <button role="button" class="botao botao2">
+              <i class="fas fa-info-circle fa-lg"></i>MAIS INFORMAÇÕES
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container carrosel">
+      <p class="lista">Adicionados recentimente</p>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="img/1883.jpg" alt="filme 1883" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/alista.jpg" alt="filme a lista" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/bts.jpg" alt="filme bts" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/das.jpg" alt="filme das" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/dracula.jpg" alt="filme dracula" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/hacker.jpg" alt="filme hacker" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/hotel.jpg" alt="filme hotel" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/kings.jpg" alt="filme kings" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/nilo.jpg" alt="filme nilo" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/simpsons.jpg" alt="serie simpsons" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/sing.jpg" alt="filme sing" class="box-filmes" />
+        </div>
+        <div class="item">
+          <img src="img/telefone.jpg" alt="filme telefone" class="box-filmes" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Desenvolvido por Kael Passos<br />
+      &copy Fins Educacionais<br />
+      <a href="#"> <img src="img/githublogo.svg" alt="github logo" /></a>
+    </footer>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
